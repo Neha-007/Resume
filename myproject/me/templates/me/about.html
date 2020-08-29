@@ -1,0 +1,26 @@
+<head>
+	<style>
+		.my_container{
+			border: 1px solid green;
+		}
+		.my_row{
+			border: 1px solid red;
+		}
+		.my_col{
+			border: 1px dotted blue;
+		}
+		
+	</style>
+</head>
+
+{% extends 'me/header.html' %}
+<body>
+{% block after_header %}
+	<div class="container">
+		<div class="row my_row">
+			<div class="col-md-8 d-flex justify-content-center  my_col"> asdasd asd asdas asddd asdasd asd asdasd asdasd</div>
+			<div class="col-md-4 d-flex justify-content-end">World asdasda asd asd asd asd</div>
+		</div>
+	</div>
+{% endblock %}
+</body>
